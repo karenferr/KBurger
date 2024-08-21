@@ -1,5 +1,5 @@
 /* geral */
-@import url('https://fonts.googleapis.com/css2?family=Calistoga&family=Inter:opsz,wght@14..32,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Calistoga&family=Inter:opsz,wght@14..32,100..900&display=swap");
 
 * {
   font-family: Arial, Helvetica, sans-serif;
@@ -12,10 +12,10 @@ a {
   text-decoration: none;
 }
 body {
- font-family: "Inter", sans-serif;
- font-size: 18px; 
- background-color: #141414;
- color: #FFF;
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  background-color: #141414;
+  color: #fff;
 }
 .container {
   width: 100%;
@@ -25,16 +25,16 @@ body {
   background: grey;
 }
 .logo a {
-font-family: 'calistoga';
-font-size: 36px;
-text-decoration: none;
-color: #fff;
+  font-family: "calistoga";
+  font-size: 36px;
+  text-decoration: none;
+  color: #fff;
 }
 .logo span {
-  color: #FE6A0F;
-  }
+  color: #fe6a0f;
+}
 
- /* header  */
+/* header  */
 header .container {
   display: flex;
   align-items: center;
@@ -47,18 +47,18 @@ header nav {
   display: flex;
   align-items: center;
   background: purple;
- }
+}
 header nav .leftside {
   display: flex;
   flex: 1; /* ocupar todo espaço disponível da nav no container */
-  background: #FE6A0F;
- }
- header nav li {
+  background: #fe6a0f;
+}
+header nav li {
   margin: 0 30px;
- }
- header nav li a {
-color: #FFF;
- }
+}
+header nav li a {
+  color: #fff;
+}
 header nav li a:hover {
   color: #999;
 }
@@ -87,13 +87,71 @@ header nav .button:hover {
 }
 .menu-icon div {
   height: 5px;
-  background-color: #FFF;
+  background-color: #fff;
 }
+/* hero */
+.hero .container {
+  display: flex;
+}
+.hero .leftside,
+.hero .rightside {
+  flex: 1; /* ocupam mesma proporção  */
+}
+.hero .leftside {
+  padding-bottom: 150px;
+}
+.hero .rightside {
+  text-align: center;
+}
+.hero .rightside img {
+  width: auto;
+  height: 600px;
+}
+.hero h1 {
+  font-family: "calistoga";
+  font-size: 70px;
+  line-height: 72px;
+  margin-top: 50px;
+}
+.hero p {
+  font-size: 20;
+  line-height: 26px;
+  margin: 40px 0;
+}
+.hero .button {
+  display: inline-block;
+  background-color: #fe6a0f;
+  font-weight: 500;
+  color: #fff;
+  padding: 15px 80px;
+  border-radius: 5px;
+}
+.hero .button:hover {
+  opacity: 0.8;
+}
+
 @media (max-width: 820px) {
   header nav {
     display: none;
   }
   header .menu-mobile {
     display: flex;
+  }
+  .hero .container {
+    flex-direction: column;
+  }
+  .hero .leftside {
+    text-align: center;
+    padding-bottom: 40px;
+  }
+  .hero .rightside {
+    padding-bottom: 50px;
+  }
+  .hero .rightside img {
+    height: 350px;
+  }
+  .hero h1 {
+    font-size: 40px;
+    line-height: 45px;
   }
 }
