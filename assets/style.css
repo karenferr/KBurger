@@ -22,7 +22,6 @@ body {
   margin: auto;
   max-width: 1200px;
   padding: 0 20px;
-  background: grey;
 }
 .logo a {
   font-family: "calistoga";
@@ -46,12 +45,10 @@ header nav {
   flex: 1; /* ocupar todo espaço disponível do container */
   display: flex;
   align-items: center;
-  background: purple;
 }
 header nav .leftside {
   display: flex;
   flex: 1; /* ocupar todo espaço disponível da nav no container */
-  background: #fe6a0f;
 }
 header nav li {
   margin: 0 30px;
